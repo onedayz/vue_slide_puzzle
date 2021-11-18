@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     publicPath: '.',
-    outputDir: 'dist',
+    outputDir: 'docs',
     assetsDir: 'assets', // prefix 'dist/'
     filenameHashing: true,
     configureWebpack: {

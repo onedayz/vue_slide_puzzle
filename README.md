@@ -1,19 +1,17 @@
 # slide_puzzle
 
-## Project setup
+### Description
+It's a simple slide puzzle game made of Vue.js.
+Demo is [here](https://onedayz.github.io/vue_slide_puzzle/) 
+
+### Project setup & run(development server)
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
+
 
 ### Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
