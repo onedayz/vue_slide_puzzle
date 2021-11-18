@@ -1,30 +1,22 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div class="puzzle-page">
+      <div class="blur"></div>
+      <router-view/>
   </div>
-  <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style lang="scss" scoped>
+.puzzle-page{
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.blur{
+    position: fixed; top: 0; left: 0; filter: blur(4px); width: 100vw; height: 100vh;
+    background-image: url("./assets/bg.png");
+    background-size: cover;
 }
 </style>
